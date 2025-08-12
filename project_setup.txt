@@ -4,14 +4,13 @@ Open your terminal or command prompt and run:
 mkdir flask_app
 cd flask_app
 2. Set Up a Virtual Environment (Recommended)
-python -m venv venv
+py -3 -m venv .venv
 
-python -m venv venv
 Activate the virtual environment:
 
 Windows:
 .............................................
-source venv/bin/activate
+.venv/Scripts/activate
 
 3. Install Required Packages
 pip install flask flask-bootstrap werkzeug
@@ -25,13 +24,6 @@ mkdir css
 cd ..
 touch app.py
 touch database.db
-mkdir templates static
-cd static
-mkdir css
-cd ..
-touch app.py
-touch database.db
-
 
 Folder Structure:
 .............................................
@@ -45,12 +37,9 @@ flask_app/
 Inside the templates folder:
 
 cd templates
-touch base.html login.html register.html dashboard.html
+ni base.html, login.html, register.html, dashboard.html
 cd ..
 
-cd templates
-touch base.html login.html register.html dashboard.html
-cd ..
 6. File Content Guide
 app.py → Main Python app
 database.db → SQLite database file
